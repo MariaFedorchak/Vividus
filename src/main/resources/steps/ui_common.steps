@@ -1,1 +1,15 @@
 
+Composite: When I navigate to the website homepage
+When I wait until element located by `caseSensitiveText(Swag Labs)` appears
+Then `${current-page-url}` is equal to `https://www.saucedemo.com/`
+
+
+Composite: When I log in as a Good User
+When I enter `${swagGoodUserName}` in field located by `xpath(//input[@id="user-name"])`
+And I enter `${swagPassword}` in field located by `xpath(//input[@id="password"])`
+And I click on element located by `xpath(//*[@id="login-button"])`
+
+Composite: When I log in as a Broken User
+When I enter `${swagBrokenUserName}` in field located by `xpath(//input[@id="user-name"])`
+And I enter `${swagPassword}` in field located by `xpath(//input[@id="password"])`
+And I click on element located by `xpath(//*[@id="login-button"])`
