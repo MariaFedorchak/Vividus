@@ -1,9 +1,9 @@
 GivenStories: story/demo/Homepage_Demo.story
 
-Scenario: Log in as a Good User
+Scenario: Log in as a User
 Given I am on main application page
 
-When I log in as a Good User
+When I log in as a Slow User
 
 Then the page with the URL 'https://www.saucedemo.com/inventory.html' is loaded
 And number of elements found by `xpath(//a/img[contains(@class,inventory_item_img)])` is equal to `6`
