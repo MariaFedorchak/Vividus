@@ -1,2 +1,14 @@
 {
+  "BUG-001": {
+    "type": "Internal",
+    "assertionPattern": ".*Expected: \"https:\\/\\/www.saucedemo.com/inventory.html\" Actual: was \"https:\\/\\/www.saucedemo.com/\".*",
+    "scenarioPattern": "Log in as a User.*",
+    "description": "Website URL to be fixed in the upcoming release"
+  },
+  "BUG-002": {
+    "type": "Internal",
+    "assertionPattern": ".*Expected: .*<6> Actual: .*<0>.*",
+    "scenarioPattern": "Log in as a User.*",
+    "description": "Website URL to be fixed in the upcoming release"
+  }
 }
