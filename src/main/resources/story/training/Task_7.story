@@ -49,6 +49,6 @@ When I click on element located by `xpath(//input[@id="continue"])`
 Then the page with the URL 'https://www.saucedemo.com/checkout-step-two.html' is loaded
 When I click on element located by `xpath(//button[@id="finish"])`
 Then the page with the URL 'https://www.saucedemo.com/checkout-complete.html' is loaded
-When I save text of element located by `xpath(//div/h2[@class="complete-header"])` to story variable `endText`
-And I initialize scenario variable `savedText` with values:`#{loadResource(/data/message.txt)}`
-Then `${endText}` is equal to `${savedText}`
+When I save text of element located by `xpath(//div/h2[@class="complete-header"])` to story variable `$endText`
+Given I initialize scenario variable `$savedText` with value `#{loadResource(/data/message.txt)}`
+Then `#{eval($endText)}` is equal to `#{eval($savedText)}`
